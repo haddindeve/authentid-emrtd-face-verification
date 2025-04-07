@@ -1,0 +1,39 @@
+# AuthentID - eMRTD Chip Identity Verification
+
+> Reads the biometric chip in an e-passport and matches the stored portrait against a live face.
+
+Author: Muhammad Tanveer (Full-Stack AI Automation Engineer)
+Contact: mtanveertahir66@gmail.com | https://www.linkedin.com/in/muhammad-tanveer-advenno/
+Repository: https://github.com/haddindeve/authentid-emrtd-face-verification
+Source availability: implementation held in a private repository; access on request.
+
+## Summary
+Photo-based identity checks verify that a document looks real, not that it is genuine or that the person presenting it is its holder. A convincing forgery passes; the chip that would expose it goes unread.
+
+Read the eMRTD chip itself, take the portrait the issuing authority stored there, and match it against a live capture. Verification then rests on data signed by the issuer rather than on the printed surface, which is the part a forger controls.
+
+## Stack
+Language: Python, Standards: ICAO eMRTD data groups, Biometrics: Face matching pipeline, Security: Certificate validation
+
+## Capabilities
+- eMRTD chip data extraction
+- Issuer certificate validation
+- Portrait-to-live-face matching
+- Automated verification test coverage
+
+## Outcomes
+- Verification anchored to issuer-signed chip data rather than the printed page
+- Document authenticity and holder identity checked in one flow
+
+## FAQ
+Q: What is an eMRTD?
+A: An electronic machine-readable travel document - a passport or ID card with a chip holding issuer-signed biometric data.
+
+Q: Why read the chip instead of the photo page?
+A: The printed page is what a forger controls. The chip is signed by the issuing authority and can be validated.
+
+Q: What does face matching add?
+A: It confirms the person presenting the document is the holder recorded on it.
+
+Q: Is the code public?
+A: No - private repository, access on request.
